@@ -39,7 +39,8 @@ class Loan(models.Model):
     start_date = models.DateField()
 
 class LoanAdmin(admin.ModelAdmin):
-    list_display=('customer_id', 'loan_type', 'loan_amount', 'interest_rate', 'loan_term_in_years', 'start_date')
+    list_display=('customer_id', 'loan_type', 'loan_amount',
+ 'interest_rate', 'loan_term_in_years', 'start_date')
 ```
 admin.py
 ```
